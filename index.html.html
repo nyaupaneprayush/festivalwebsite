@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>>My Awesome Festival Website</title>
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #ff4d4d;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+    }
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #ff4d4d;
+      border-radius: 5px;
+    }
+    section {
+      width: 80%;
+      margin: 40px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: none;
+    }
+    section.active { display: block; }
+    section h2 {
+      color: #ff4d4d;
+      margin-bottom: 10px;
+    }
+    section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    /* LOGIN PAGE */
+    #login-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(120deg, #ff4d4d, #ffa64d);
+    }
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .login-box h2 {
+      color: #ff4d4d;
+      margin-bottom: 20px;
+    }
+    .login-box input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-box button {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .login-box button:hover {
+      background-color: #e63e3e;
+    }
+    #main-content { display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- LOGIN PAGE -->
+  <div id="login-page">
+    <div class="login-box">
+      <h2>Login to Nepali Festivals</h2>
+      <input type="text" id="username" placeholder="Prayush Nyaupane"><br>
+      <input type="password" id="password" placeholder="prayush12"><br>
+      <button onclick="login()">Login</button>
+      <p style="margin-top:10px; font-size:14px;"></p>
+    </div>
+  </div>
+
+  <!-- MAIN WEBSITE -->
+  <div id="main-content">
+    <header>
+      <h1>My Awesome Festival Website</h1>
+      <p>Celebrating Dashain, Tihar & Chhath</p>
+    </header>
+
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('dashain')">Dashain</a>
+      <a href="#" onclick="showPage('tihar')">Tihar</a>
+      <a href="#" onclick="showPage('chhath')">Chhath</a>
+      <a href="#" onclick="showPage('experience')">My Experience</a>
+    </nav>
+
+    <section id="home" class="active">
+      <h2>Welcome to Nepali Festivals</h2>
+      <p>This website celebrates Nepal’s biggest and most loved festivals: <b>Dashain</b>, <b>Tihar</b>, and <b>Chhath</b>. Each of these festivals represents unity, joy, and devotion in Nepali culture.</p>
+      <img src="Image05.jpg" alt="Home Image">
+      </section>
+
+    <section id="dashain">
+      <h2>Dashain Festival</h2>
+      <p>Dashain is the grandest festival in Nepal, symbolizing the victory of good over evil. It honors Goddess Durga, who defeated the demon Mahishasur. Families gather to receive tika and jamara from elders and enjoy delicious food.</p>
+      <p>People fly kites, play cards, buy new clothes, and celebrate with joy throughout the country. It’s a time for love, blessings, and family reunions.</p>
+      <img src="Image01.png" alt="Dashain Image">
+    </section>
+
+    <section id="tihar">
+      <h2>Tihar Festival</h2>
+      <p>Tihar, also known as Deepawali, is the festival of lights and the second biggest festival in Nepal. It lasts five days, honoring animals like crows, dogs, and cows, and ends with Bhai Tika – celebrating the bond between brothers and sisters.</p>
+      <p>Homes are decorated with diyos, candles, and lights. People sing Deusi-Bhailo and create colorful rangolis, filling the streets with joy and brightness.</p>
+      <img src="Image04.jpg" alt="Tihar Image">
+    </section>
+
+    <section id="chhath">
+      <h2>Chhath Festival</h2>
+      <p>Chhath Puja is dedicated to the Sun God (Surya) and Chhathi Maiya. It is mainly celebrated in Nepal’s Terai region. Devotees fast, stand in rivers, and offer prayers to the setting and rising sun for health and prosperity.</p>
+      <p>This festival teaches purity, discipline, and deep gratitude to nature for giving life and energy to the world.</p>
+      <img src="Image06.jpg" alt="Chhath Image">
+    </section>
+
+    <section id="experience">
+      <h2>My Festival Experience</h2>
+      <p>This year, I celebrated Dashain and Tihar with my family. We played cards, decorated our home with lights, and received blessings from elders. The joy and love among family members made it unforgettable.</p>
+      <p>During Chhath, I visited Janakpur. Thousands of devotees were offering prayers by the river. The sunset and devotion created a peaceful and spiritual atmosphere I’ll always remember.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Chhath_Puja_at_Janakpur.jpg" alt="My Experience">
+    </section>
+
+    <footer>
+      <p>&copy; 2025 | Created by [My Awesome Festival Website]</p>
+    </footer>
+  </div>
+
+  <script>
+    function login() {
+      document.getElementById("login-page").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+      showPage('home');
+    }
+
+    function showPage(pageId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+  </script>
+
+</body>
+</html>
